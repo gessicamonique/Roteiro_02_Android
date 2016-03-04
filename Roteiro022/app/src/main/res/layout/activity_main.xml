@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.sonyvaio.roteiro02.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INFORME QUAL COR DESEJA TRADUZIR:"
+        android:textColor="#7d7b87"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:id="@+id/textView"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---> AMARELO"
+        android:gravity="center"
+        android:textColor="#f9f507"
+        android:textSize="20sp"
+        android:id="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---> VERMELHO"
+        android:gravity="center"
+        android:textColor="#F00000"
+        android:textSize="20sp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0004f0"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="---> AZUL"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TRADUZIR"
+        android:id="@+id/botaoTraduzir"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/cor"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Cor:"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:id="@+id/cor"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView4" />
+
+    <ImageView
+        android:src="@drawable/splashscreen"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
